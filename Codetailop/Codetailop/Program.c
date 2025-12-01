@@ -2,10 +2,33 @@
 // Chuong trinh phan mem Bat dau thuc thi & Ket thuc o day.
 
 #include <stdio.h>
+#include <math.h>
 
-int main()
-{
-    printf("Hi there!\n");
+//int main() {
+//
+//	int n;
+//	int y[10];
+//	int tong = 0;
+//	printf("Nhap phan tu: ");
+//	scanf_s("%d", &n);
+//	for (int i = 0; i < n; i++) {
+//		printf("y[%d] = ", i);
+//		scanf_s("%d", &y[i]);
+//	}
+//	printf("Cac phan tu cua mang la: \n");
+//	for (int i = 0; i < n; i++) { 
+//		printf("%d", y[i]);
+//		tong += y[i];
+//	}
+//}
+int main() {
+	char ten[50];
+	printf("Nhap vao ten cua ban: ");
+	scanf_s("%s", ten);
+	puts(ten);
+	printf("Ten cua ban la: %s", ten);
+	gets(ten);
+	printf("Ten cua ban la: %s", ten);
 }
 
 // Debug/Run chuong trinh: bam "F5" hoac "Debug > Start Debugging" tren menu
