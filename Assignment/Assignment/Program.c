@@ -2,10 +2,32 @@
 // Chuong trinh phan mem Bat dau thuc thi & Ket thuc o day.
 
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
-    printf("Hi there!\n");
+    int chon;
+    do {
+        printf("\n==== MENU ====\n");
+        printf("1. Kiem tra so nguyen\n");
+        printf("2. Tim UCLN va BCNN\n");
+        printf("3. Tinh tien Karaoke\n");
+        printf("0. Thoat\n");
+        printf("Chon: ");
+        scanf("%d", &chon);
+
+        if (chon == 1) {
+            int x;
+            printf("Nhap x: ");
+            scanf("%d", &x);
+            int i, dem = 0;
+            for (i = 2; i <= x; i++) {
+                if (x % i == 0)
+                    dem++;
+            }
+;        }
+    }
+    
 }
 
 // Debug/Run chuong trinh: bam "F5" hoac "Debug > Start Debugging" tren menu
