@@ -14,12 +14,12 @@ int main()
         printf("3. Tinh tien Karaoke\n");
         printf("0. Thoat\n");
         printf("Chon: ");
-        scanf("%d", &chon);
+        scanf_s("%d", &chon);
 
         if (chon == 1) {
             int x;
             printf("Nhap x: ");
-            scanf("%d", &x);
+            scanf_s("%d", &x);
             int i, dem = 0;
             for (i = 2; i <= x; i++) {
                 if (x % i == 0)
