@@ -1,6 +1,3 @@
-// CConsoleApplication.c : file nay chua 'main' function. 
-// Chuong trinh phan mem Bat dau thuc thi & Ket thuc o day.
-
 #include <stdio.h>
 #include <math.h>
 
@@ -21,16 +18,57 @@
 //		tong += y[i];
 //	}
 //}
-int main() {
-	char ten[50];
-	printf("Nhap vao ten cua ban: ");
-	scanf_s("%s", ten);
-	puts(ten);
-	printf("Ten cua ban la: %s", ten);
-	gets(ten);
-	printf("Ten cua ban la: %s", ten);
-}
 
+//int main() {
+//	char ten[50];
+//	printf("Nhap vao ten cua ban: ");
+//	scanf_s("%s", ten);
+//	puts(ten);
+//	printf("Ten cua ban la: %s", ten);
+//	gets(ten);
+//	printf("Ten cua ban la: %s", ten);
+//}
+
+//void demoMang2Chieu()
+//{
+//	int array[2][3];
+//	for (int i = 0; i < 2; i++)
+//	{
+//		for (int j = 0; j < 3; j++)
+//		{
+//			printf("mang[%d][%d] = ", i, j);
+//			scanf_s("%d", &array[i][j]);
+//		}
+//	}
+//	for (int i = 0; i < 2; i++)
+//	{
+//		for (int j = 0; j < 3; j++)
+//		{
+//			printf("%d, ", array[i][j]);
+//		}
+//		printf("\n");
+//	}
+//}
+
+void demoString()
+{
+	// string
+	char name[10] = "Anh"; // { 'A', 'n', 'h' }
+	// gets(name); > fgets();
+	while (getchar() != '\n');
+	
+	printf("Nhap ten cua ban: ");
+	fgets(name, sizeof(name), stdin);
+
+	// Xuat du lieu = for + printf
+	printf("%s", name);
+	printf("\n");
+	//puts(name);
+}
+int main()
+{
+	demoString();
+}
 // Debug/Run chuong trinh: bam "F5" hoac "Debug > Start Debugging" tren menu
 
 // Danh cho nguoi moi bat dau:

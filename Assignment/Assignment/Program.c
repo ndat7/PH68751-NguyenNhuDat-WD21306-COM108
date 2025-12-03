@@ -4,9 +4,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-// ---------------------------------------------
 // HÀM HỖ TRỢ
-// ---------------------------------------------
+
 int gcd(int a, int b) {
     while (b != 0) {
         int temp = a % b;
@@ -16,9 +15,8 @@ int gcd(int a, int b) {
     return a;
 }
 
-// ---------------------------------------------
 // CN1: KIỂM TRA SỐ NGUYÊN
-// ---------------------------------------------
+
 void kiemTraSoNguyen() {
     double so;
     int luaChon;
