@@ -12,22 +12,20 @@ int main()
         printf("1. Kiem tra so nguyen\n");
         printf("2. Tim UCLN va BCNN\n");
         printf("3. Tinh tien Karaoke\n");
+        printf("4. Tinh tien dien\n");
+        printf("5. Chuc nang doi tien\n");
+        printf("6. Xay dung chuc nang tinh lai suat vay ngan hang vay tra gop\n");
+        printf("7. Xay dung chuong trinh vay tien mua xe\n");
+        printf("8. Sap xep thong tin sinh vien\n");
+        printf("9. Xay dung game POLY-LOTT\n");
+        printf("10. Xay dung chuong trinh tinh toan phan so\n");
         printf("0. Thoat\n");
         printf("Chon: ");
         scanf_s("%d", &chon);
 
-        if (chon == 1) {
-            int x;
-            printf("Nhap x: ");
-            scanf_s("%d", &x);
-            int i, dem = 0;
-            for (i = 2; i <= x; i++) {
-                if (x % i == 0)
-                    dem++;
-            }
-;        }
+        
+            
     }
-    
 }
 
 // Debug/Run chuong trinh: bam "F5" hoac "Debug > Start Debugging" tren menu
