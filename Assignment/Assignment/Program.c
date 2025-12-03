@@ -302,6 +302,67 @@ void tinhToanPhanSo() {
 
         printf("Tiep tuc (1: Co, 0: Khong)? ");
         scanf_s("%d", &luaChon);
+        printf("--------------------------------------------------\n");
+    } while (luaChon == 1);
+}
+
+// ---------------------------------------------
+// MAIN MENU
+// ---------------------------------------------
+int main() {
+    int chon;
+
+    do {
+        printf("============== MENU ==============\n");
+        printf("0. Thoat\n");
+        printf("1. Kiem tra so nguyen\n");
+        printf("2. Uoc chung & Boi chung\n");
+        printf("3. Tinh tien Karaoke\n");
+        printf("4. Tinh tien dien\n");
+        printf("5. Doi tien\n");
+        printf("6. Tinh lai suat vay ngan hang\n");
+        printf("7. Vay mua xe tra gop\n");
+        printf("8. Sap xep sinh vien\n");
+        printf("9. Game FPOLY-LOTT\n");
+        printf("10. Tinh toan phan so\n");
+        printf("Chon chuc nang: ");
+        scanf_s("%d", &chon);
+
+        switch (chon) {
+        case 1: kiemTraSoNguyen(); break;
+        case 2: uocChungvaBoiChung(); break;
+        case 3: tinhTienQuanKaraoke(); break;
+        case 4: tinhTienDien(); break;
+        case 5: doiTien(); break;
+        case 6: tinhLaiSuatVayNganHang(); break;
+        case 7: vayTienMuaXeTraGop(); break;
+        case 8: sapXepThongTinSinhVien(); break;
+        case 9: gameFpolyLott(); break;
+        case 10: tinhToanPhanSo(); break;
+        case 0: printf("Thoat chuong trinh...\n"); break;
+        default: printf("Lua chon khong hop le!\n");
+        }
+    } while (chon != 0);
+
+    return 0;
+}
+
+// Debug/Run chuong trinh: bam "F5" hoac "Debug > Start Debugging" tren menu
+
+// Danh cho nguoi moi bat dau:
+//   1. Mo "View" > "Solution Explorer"
+//          de them/quan ly cac files
+//   2. Mo "View" > "Output"
+//          de kiem tra "build output" va "cac thong bao khac"
+//   3. Mo "View" > "Error List"
+//          de xem loi
+//   4. Chon Project > "Add" > "New Item"
+//          de tao moi file code,
+//      hoac Project > "Add" > "Existing Item"
+//          de them file da ton tai vao project nay.
+//   5. Sau nay, de mo lai project nay,
+//          chon "File > Open > Project" va chon file *.sln
+//      Co the xem thu muc project, noi luu file *.sln bang cach
 // Debug/Run chuong trinh: bam "F5" hoac "Debug > Start Debugging" tren menu
 
 // Danh cho nguoi moi bat dau:
