@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
 
 //int main() {
 //
@@ -50,6 +51,7 @@
 //	}
 //}
 
+
 void demoString()
 {
 	// string
@@ -64,11 +66,57 @@ void demoString()
 	printf("%s", name);
 	printf("\n");
 	//puts(name);
+
+	// string
+	char name[50] = { 'A', 'n', 'h' };
+	char mangKyTu[50];
+	// gets(name); > fgets();      khong dung duoc khoang trang
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	scanf_s(" %c", &name[i]);
+	//}
+	while (getchar() != '\n');
+	printf("Nhap ten cua ban: ");
+	fgets(name, sizeof(name), stdin); //nhap duoc khoang trang
+	// xuat du lieu = for + printf
+	printf(" %s", name);
+	printf("\n");
+	//puts(name) thay the cho ca mang for bao gom ca dau xuong dong
+	// puts(mangKyTu);
+	printf("String Length: ");
+	printf("%d", strlen(mangKyTu));
+	printf("\n");
+	printf("String Compare Greater than: ");
+	printf("%d", strcmp("C", "A"));
+	printf("\n");
+	printf("String Lower: ");
+	printf("%s", strlwr(mangKyTu));
+	printf("\n");
+	printf("String Upper: ");
+	printf("%s", strupr(mangKyTu));
+	printf("\n");
+	printf("String Reverse (Encryption): ");
+	printf("%s", strrev(mangKyTu));
+	printf("\n");
+	printf("String Reverse (Decryption): ");
+	printf("%s", strrev(mangKyTu));
+	printf("\n");
+	printf("Find String in String: ");
+	if (strstr(mangKyTu, "A") != NULL)
+	{
+		printf("Found: ");
+		printf("%s", strstr(mangKyTu, "A"));
+	}
+	else
+	{
+		printf("NOT FOUND");
+	}
 }
 int main()
 {
 	demoString();
 }
+
 // Debug/Run chuong trinh: bam "F5" hoac "Debug > Start Debugging" tren menu
 
 // Danh cho nguoi moi bat dau:
